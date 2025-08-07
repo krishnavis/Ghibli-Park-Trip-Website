@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage) -->
+            <title>A Look Into Studio Ghibli</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="icon" href="https://www.pngmart.com/files/12/My-Neighbor-Totoro-Transparent-Background.png">
+            
+            <!-- Custom fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion) -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#start">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Relevant Links</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id ="reduce-motion-button">Reduce Motion</button></li>
+              </ul>
+        </div>         
+
+
+        <!-- headings
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage -->
+
+        <div class = "header-container"> 
+
+            <div id = "header-img">
+                <img alt="Totoro walking gif" id="header-img" src="https://media1.tenor.com/m/iWIQEm96iZgAAAAd/%E3%81%8B%E3%81%BF%E5%A4%AA.gif"/>
+            </div>
+
+            <div class = "header-text">
+                <div class="header-item">
+                    <h1 id = "start">Through Miyazaki’s Eyes: Experiencing the World of Ghibli Park</h1>
+                </div>
+
+                <div class="header-item">
+                    <h3> Unlock the magic of Studio Ghibli — where every step through Ghibli Park brings its stories to life.</h3>
+                </div>
+        
+                <div class = "header-button">
+                    <a href = "https://ghibli-park.jp/en/ticket/">
+                    <button type="button">Buy a ticket</button>
+                    </a>
+
+                    <a href = "https://mymodernmet.com/history-of-studio-ghibli/#:~:text=Studio%20Ghibli%20was%20founded%20by,Miyazaki%3B%20Japanese%20film%20director%20Isao">
+                    <button type="button">Learn more about Studio Ghibli</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- about
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event --> 
+        <div class = "event-container">
+            <h2 id = "about">About the Event</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WIaLE0RFzNI?si=8_eBjj3MUgG9jbrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+            <p>The works of Studio Ghibli have moved hearts and stirred emotions throughout the world. 
+            From the beautiful animation to the complex plot lines, the art Studio Ghibli has been highly regarded. 
+            For this reason, a trip to visit Ghibli Park in Japan will be held in early August where lovers of Ghibli are invited to attend for a group outing.  </p>
+            <h3>What to Expect</h3>
+            <h4> Visiting the land "where dreams take flight"</h4>
+            <ul>
+                <li> <b>Look at Ghibli Film Sets:</b> <i>See famous locations from movies!</i></li>
+                <li> <b>Watch a film in Cinea Orion:</b> <i>Witness moments only shown here!</i></li>
+                <li> <b>Shop to your heart's content:</b> <i>Buy some souvenirs for loved ones!</i></li>
+            </ul>
+        </div>
+
+        <!-- schedule
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity --> 
+        <h2 id = "schedule">Event Schedule</h2>
+        <div class = "schedule-container">
+            <div class = "schedule-item">
+                <img alt="A photo of one of the Ghibli sets in Ghibli Park" src="./img/howlsmovingcastle.jpeg"/>
+                <h3 class = "activity">Visit Ghibli Film Sets</h3>
+                <p>Explore places like Howl’s castle </p>
+            </div>
+
+            <div class = "schedule-item">
+                <img alt="A photo of one of Cinema Orion at Ghibli Park"  src="./img/ghiblipark.webp"/>
+                <h3 class = "activity">Catch a Film in the Theater</h3>
+                <p>Watch Ghibli short films you can only see here</p>
+            </div>
+
+            <div class = "schedule-item">
+                <img alt="A photo of one of the shops at Ghibli Park"   src="./img/ghiblishops.jpg"/>
+                <h3 class = "activity">Shop at the Park's Stores and Cafes</h3>
+                <p>Grab a meal and some exclusive souvenirs</p>
+            </div>
+        </div>
+        
+        
+        <!-- rsvp
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <p id = "rsvp-count"> ✮ 3 people have RSVP'd for this event! </p>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                      Ready to step into the world of Totoro, Spirited Away, and Howl’s Moving Castle? Watch your favorite films come to life as you travel through Ghibli Park. Join us on a magical trip to Studio Ghibli! RSVP down below! This trip will be happening on August 9th, 2025. Complete the form below by entering your name, email, and phone number so our team can reach out about details from the trip! Ensure you get all the relevant details by RSVPing!
+                </div>
+                <div class="rsvp-participants">
+                    <p>❀ Zayne from Massachusetts has RSVP'd.</p>
+                    <p>❀ Tara from California has RSVP'd.</p>
+                    <p>❀ Vincent from Indiana has RSVP'd.</p>
+                </div>
+             </div>
+
+        <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="Name">Name: </label>
+                    <input type="text" id="name-input" placeholder="Name">
+                    <label for="Number">Number: </label>
+                    <input type="text" id="number-input" placeholder="Mobile number">
+                    <label for="Email">Email: </label>
+                    <input type="email" id="email-input" placeholder="Email">
+
+                <!-- Submit button -->
+                    <button id="rsvp-button">Submit RSVP</button>
+                </form>
+             </div>      
+        </div>
+
+        <!-- success modal
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id = "modal-text"> Trip: Joined! <br> Thank you for signing up! We look forward to seeing you there!</p>
+                </div>
+                <div id="modal-item">
+                    <img id = "modal-img" src="img/totorowave.png"/>
+                </div>
+                <button id="exit-modal-button">Exit</button>
+            </div>
+        </div>
+
+        <!-- links
+        Purpose:
+        - Links to other resources related to the event --> 
+        <div class = "links-container">
+        <h2 id = "links">Links</h2>
+
+        <!-- This <a> block is one link. -->
+        <a class="block" href="https://ghibli-park.jp/en/">
+            <article>
+                <h3>Studio Ghibli Park's Official Websites</h3>
+                <p>Find more information about the park by going to the official website.</p>
+            </article>
+        </a>
+        <a class="block" href="https://blooloop.com/theme-park/in-depth/studio-ghibli-theme-park/">
+            <article>
+                <h3>All You Need to Know About a Trip to Ghibli Park</h3>
+                <p>Read this article that breaks down attractions and prices for a visit to Ghibli Park.</p>
+            </article>
+        </a>
+        </div>
+            
+        <!-- footer -->
+         <div class = "footer">
+            <a href= "mailto: krishna.geethika.rr@gmail.com"> Email me </a>            
+            <a href="https://www.linkedin.com/in/krishnag-vis/"> | Connect with me on LinkedIn </a>
+         </div>
+
+        <!-- script -->
+        <script src="index.js"></script>
+    </body>
+</html>

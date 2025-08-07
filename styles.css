@@ -1,0 +1,475 @@
+
+/*** VSCodeEDU preview fix 
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window ***/
+
+html {
+    background-color: var(--bg-color);
+    scroll-padding-top: 50px; /* Adjust to match height of navbar */
+}
+
+/*** Body ***
+  Purpose:
+  - Style rules for the body of webpage ***/
+body { 
+  background-color:  #e9eeda; 
+  font-size: 20px;
+  color: #6b7643;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  /* Space around the edges of the webpage */
+  margin: 0px;
+}
+
+/*** Text ***
+  Purpose: 
+  - Style rules for headings (h1-6), paragraphs (p), links (a), and buttons ***/
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-style: normal;   
+  font-size: 65px;
+  font-weight: 60px;
+}
+
+h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;   
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a,
+a * {
+  font-size:20px;
+}
+
+button {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer; 
+  border: none;
+  font-size: 20px;
+  color:  white; 
+  background-color: #6b7643;   /* Button color */
+  border-radius: 60px;         /* Curved edges instead of square */
+  padding: 5px 15px;
+}
+
+/* Make the button look different when the user hovers over it */
+button:hover {
+  background-color: #A6D784;
+  color: white;
+}
+
+#theme-button{
+  padding: 5px;
+  margin: 5px; 
+  background-color:  #e9eeda; 
+  color: #6b7643;
+}
+
+#reduce-motion-button{
+  padding: 5px;
+  margin: 5px; 
+  background-color:  #e9eeda; 
+  color: #6b7643;
+}
+
+.activity{
+  padding: 10px;
+  margin: 15px;
+}
+
+ul {
+  list-style-type: square; 
+}
+
+a:link{
+  color: #9aa37d;
+}
+
+a:visited{
+  color: #62877e;
+}
+
+a:hover{
+  color: #A6D784; 
+}
+
+a:active{
+  color: #746e71;
+}
+
+
+/*** Header ***
+  Purpose:
+  - Style rules for website's header section ***/
+
+.header-container { 
+  padding-top: 20px;
+  margin-bottom: 20px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  width: auto; 
+  gap: 80px;
+  margin: 50px;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-wrap: wrap;
+  order: 1;
+}
+
+.header-item:nth-of-type(1){
+  width: 100%; 
+}
+
+.header-item:nth-of-type(2){
+  width: 100%; 
+}
+
+#header-img{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 400px;
+  width: 550px;
+  max-width: 800px;
+  border: 10;
+  order: 2;
+  border-radius: 25px;
+}
+
+.header-button{
+  color: var(--text-color); /* text color */
+  cursor: pointer;
+  padding: 1px; 
+  border: none;
+  margin: 10px;
+}
+
+.event-container { 
+  margin: 50px;
+}
+
+/*** Footer ***
+  Purpose:
+  - Style rules for website's footer section ***/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+/*** Navigation bar (navbar) ***
+  Purpose:
+  - Style rules for website's navbar ***/
+
+.navbar ul {
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  background-color: #6b7643; 
+}
+
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px; 
+}
+
+.navbar ul li a:hover {
+  color: #A6D784; 
+}
+
+/*** About Section ***
+  Purpose:
+  - Style rules for website's About section ***/
+
+/*** Schedule Section ***
+  Purpose:
+  - Style rules for website's Schedule section ***/
+
+#schedule{
+  margin: 50px;
+  margin-bottom: 20px; 
+}
+
+.schedule-container { 
+  display: flex; 
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.schedule-item{
+  background-color:white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedule-item:nth-of-type(1){
+  width: 30%; 
+}
+
+.schedule-item:nth-of-type(2){
+  width: 30%; 
+}
+
+.schedule-item:nth-of-type(3){
+  width: 30%; 
+}
+
+.schedule-item img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: auto;
+}
+
+/*** Links Section ***
+  Purpose:
+  - Style rules for website's Links section ***/
+.links-container { 
+  margin: 50px;
+}
+
+/*** RSVP Section ***
+  Purpose:
+  - Style rules for website's RSVP form ***/
+
+#rsvp{
+  margin: 50px;
+  margin-bottom: 20px; 
+}
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.rsvp-para{
+  width: 55%;
+  padding-right: 10px; 
+}
+
+.rsvp-participants{
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c74148;
+  background-color: #f16359;
+  color: white;
+}
+
+/*** Success Modal  ***
+  Purpose:
+  - Style rules to website's pop-up modal, which appears
+    when a user successfully submits the RSVP form ***/
+
+.modal {
+  display: none;   /* Modal should be hidden by default*/
+  position: fixed; /* Modal cannot move around the screen */
+  z-index: 2;      /* Modal appears above other elements */ 
+  
+  /* Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  /* Change modal size and spacing here */
+  padding: 50px;
+  width: 55%;
+
+  /* Customize modal style here */
+  background-color: #9aa37d;
+  color: black;
+  border: 5px solid black;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Cormorant Upright", serif;
+  font-style: normal;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#exit-modal-button{
+  padding-top: 5px; 
+  background-color: white;
+  color: #c74148;
+  border: 3px solid #c74148;
+}
+
+#exit-modal-button:hover {
+  background-color: #c74148;
+  color: white;
+}
+
+#modal-item img {
+  width: 30%;
+  height: 30%;
+}
+
+/* Dark mode style */
+.dark-mode {
+  background-color: #232e46; 
+  color: #f4f4eb;
+}
+
+.dark-mode button {
+  color:  #232e46; 
+  background-color: #f4f4eb;  
+}
+
+.dark-mode button:hover {
+  background-color: #305D8E;
+  color: white;
+}
+
+.dark-mode a:link{
+  color: #232e46;
+}
+
+.dark-mode a:visited{
+  color: #639ab3;
+}
+
+.dark-mode a:hover{
+  color: #305D8E; 
+}
+
+.dark-mode a:active{
+  color: #b0d5ca;
+}
+
+.dark-mode footer {
+  background-color: white;
+}
+
+.dark-mode .navbar ul {
+  background-color: #f4f4eb; 
+}
+
+.dark-mode .navbar ul li a:hover {
+  color: #305D8E; 
+}
+
+.dark-mode .schedule-item{
+  background-color:#00457a;
+}
+
+.dark-mode #theme-button{
+  padding: 5px;
+  margin: 5px; 
+  background-color:  #232e46; 
+  color: #f4f4eb;
+}
+
+.dark-mode #reduce-motion-button{
+  padding: 5px;
+  margin: 5px; 
+  background-color:  #232e46; 
+  color: #f4f4eb;
+}
+
+.dark-mode .modal-container {
+  background-color: #6fa5bb;
+  color: white;
+  border: 5px solid white;
+}
+
+/*** Custom Colors ***/
+:root {
+  /* Light Mode */
+  --bg-color: #e9eeda;
+  --text-color: #6b7643;
+
+  /* Dark Mode */
+  --bg-color-dark-mode: #232e46;
+  --text-color-dark-mode: #f4f4eb;
+
+  /* Accent Colors */ 
+  --accent-color-light: #00457a;
+  --accent-color-medium: #828E9A;
+  --accent-color-dark: #305D8E;
+  --accent-color-darkest: #233047;
+  --accent-color-green: #aaa241;
+
+  /* Error Colors */
+  --error-color: #E84C4F;
+  --error-color-border: #BC6A68;
+}
