@@ -20,7 +20,7 @@ This is a single-page interactive website inspired by Studio Ghibli, built with 
 
 ## Purpose
 
-This project was developed to practice front-end development techniques, including accessibility features and interactive UI components, while creating a fun and engaging user experience.
+This project was developed as part of CodePath's WEB 101 class. It taught students how to practice front-end development techniques, including accessibility features and interactive UI components, while creating a fun and engaging user experience.
 
 ## Live Demo
 
